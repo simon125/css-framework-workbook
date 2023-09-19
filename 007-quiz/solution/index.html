@@ -1,0 +1,239 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Quiz</a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="p-5">
+          <h1 class="display-3 text-center">
+            Wielki quiz z wiedzy <br />
+            o Front-Endzie
+          </h1>
+        </div>
+        <form class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="bg-light border p-3">
+              <label for="q1" class="form-label">
+                Która technologia to język programowania?
+              </label>
+              <select name="answer1" required class="form-select" id="q1">
+                <option hidden selected>Select value</option>
+                <option value="HTML">HTML</option>
+                <option value="JS">JavaScript</option>
+                <option value="CSS">CSS</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="bg-light border p-3">
+              <label class="form-label">Czy w CSS są zmienne?</label>
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="answer2"
+                    id="q2a1"
+                    value="tak"
+                  />
+                  <label class="form-check-label" for="q2a1">Tak</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="answer2"
+                    id="q2a2"
+                    value="nie"
+                  />
+                  <label class="form-check-label" for="q2a2">Nie</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="bg-light border p-3">
+              <label for="q1" class="form-label"
+                >Któro zdanie/a odpowiada/ją na pytanie "czym jest
+                framework"?</label
+              >
+              <div class="form-check">
+                <input
+                  name="answer3a"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="0"
+                  id="0"
+                />
+                <label class="form-check-label" for="0">
+                  Gotowe kawałki kodu
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  name="answer3b"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="0"
+                  id="1"
+                />
+                <label class="form-check-label" for="1">
+                  Kod open source
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  name="answer3c"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="0"
+                  id="2"
+                />
+                <label class="form-check-label" for="2">
+                  Sposób na pisanie aplikacji
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  name="answer3d"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="3"
+                  id="3"
+                />
+                <label class="form-check-label" for="3">
+                  Framework to kawałki kodu ułatwiające tylko pracę z CSSem
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  name="answer3e"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="4"
+                  id="4"
+                />
+                <label class="form-check-label" for="4">
+                  Sposób na szybkie pisanie apek/stron
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  name="answer3f"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="5"
+                  id="5"
+                />
+                <label class="form-check-label" for="5">
+                  Daje możliwość bardzo wysokiej customizacji
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  name="answer3g"
+                  class="form-check-input"
+                  type="checkbox"
+                  value="6"
+                  id="6"
+                />
+                <label class="form-check-label" for="6">
+                  Są to grafiki które opisują jak aplikacjia powinna wyglądać
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="bg-light border p-3">
+              <label class="form-label"
+                >Czy Bootstrap wymaga JSa do podstawowego działania?</label
+              >
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input
+                    name="answer4"
+                    class="form-check-input"
+                    type="radio"
+                    value="tak"
+                    id="q4a1"
+                  />
+                  <label class="form-check-label" for="q4a1">Tak</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="answer4"
+                    value="nie"
+                    id="q4a2"
+                  />
+                  <label class="form-check-label" for="q4a2">Nie</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="bg-light border p-3">
+              <label class="form-label"
+                >Czy Bootstrap wymaga JSa do pełnego działania?</label
+              >
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="answer5"
+                    id="q5a1"
+                    value="tak"
+                  />
+                  <label class="form-check-label" for="q5a1">Tak</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="answer5"
+                    id="q5a2"
+                    value="nie"
+                  />
+                  <label class="form-check-label" for="q5a2">Nie</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center gap-3">
+            <button class="btn btn-primary my-3 btn-lg">Submit</button>
+            <button type="reset" class="btn btn-secondary my-3 btn-lg">
+              Repeat
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="bg-light p-3 border-top mt-auto">
+      <div class="container">
+        <p class="lead m-0 text-center">Created with 🖥️ by Szymon</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

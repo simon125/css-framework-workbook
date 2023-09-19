@@ -1,0 +1,87 @@
+<!-- 
+  Przed rozpoczęciem kilka słów o tym jak pracować z tym plikiem
+ 
+  1) zadania możesz uruchomić dzięki uruchomieniu pliku index.html w przeglądarce
+     - możesz przeciągnąć plik index.html do okna przegladarki
+     - możesz odapilić plik html za pomocą rozszerzenia live server
+  2) Do rozwiązywania zadań możesz praktycznie wszystko (chyba że w zadaniu jest opisane co można a co nie) tzn.
+     - dodawać kod HTML
+     - edytować kod HTML
+     - dodawać kod CSS
+     - korzystać z internenetu
+     - etc.
+  3) każde zadanie posiada przykładowe rozwiązanie w folderze solution użyj go jeżeli:
+     - nie wiesz jak ruszyć zadania
+     - chcesz sprawdzić moją przykładową implementację
+  4) jeżeli Twoje rozwiązanie różni się od zaproponowanego przezemnie nie musi to oznaczać że Twoje jest złe/gorsze
+     problemy w programowaniu mają często wiele rozwiązań
+ 
+  Powodzenia!
+ -->
+
+<!-- 
+
+    Zadanie
+
+    Twoim zadaniem jest przy pomocy html oraz frameworka Bootstrap odwzorować designy dostępne w folderze designs.
+    Jest to mini apka typu counter - tego typu aplikacja jest częstym pierwszym krokiem w nauce różnych frontendowych
+    technologii. Zasada działania jest prosta: są dwa przyciski oraz input służący do wyświetlania aktualnego stanu countera (ang. licznik)
+    Przyciski służą do zwiększania lub zmniejszania wartości counter o 1.
+
+    Dodatkowo żeby aplikacja działała dodaj skrypt javscriptowy do dokumentu który jest w pliku script.js
+    żeby skrypt działał poprawnie do przycisków oraz inputu musisz dodać kolejno atrybuty id
+    - przycisk z labelką +1   id="increment"  
+    - przycisk z labelką -1   id="decrement"  
+    - input   id="output"  
+
+    Żeby zapobiec niechcianej podmianie wartości w inpucie niech input posiada atrybut disabled oraz readonly
+    
+    wymagania:
+    - dołączenie Bootstrapa do projektu (style oraz skrypt) - w następnych zadaniach ten krok już będzie wykonany  
+    - użycie Bootstrapa
+    - odwzorowanie 1:1 designu
+    - ⭐ dołączenie skryptu (plik script.js) który spowoduje pełne działanie apki 
+
+    Dokumentacja:
+    Do rozwiązania zadania będziesz musiał/a użyć odpowiednich klas które dostarcza bootstrap
+    w zadaniu przydatne będą sekcje z dokumentacji: 
+    Layout/Containers
+    Layout/Grid
+    Layout/Columns
+    Layout/Gutters
+    Forms/Overview
+    Forms/Form control
+    Components/Buttons
+
+    💡 hinty:
+    1) użyj podstawowej struktury do budowy layoutu w bootstrapie: container > row > col
+    2) niech container posiada dodatkową klase mt-5 która odsunie go od góry
+    3) niech col będzie col-6 dla ekranów zaczynąjących się od breakpointa md (col-md-6) dla mniejszych col-10
+    4) niech col zawiera następującą strukture:  h1 z wyśrodkowanym tekstem i rodzeństwo div z clasą d-flex 
+       i zawartością zgodną z designem czyli button input button
+
+ -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Moja super apka</a>
+        </div>
+      </nav>
+      <!-- MIEJSCE NA TWÓJ KOD START -->
+
+      <!-- MIEJSCE NA TWÓJ KOD END -->
+    </div>
+    <footer class="bg-light p-3 border-top mt-auto">
+      <div class="container">
+        <p class="lead m-0 text-center">Created with 🖥️ by Szymon</p>
+      </div>
+    </footer>
+  </body>
+</html>

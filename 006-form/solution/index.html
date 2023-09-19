@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .more-fields {
+        display: none;
+      }
+
+      #showMore:checked + .more-fields {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Form</a>
+        </div>
+      </nav>
+      <div class="container mt-5">
+        <div class="row justify-content-center g-2">
+          <div class="col-12 col-md-7 bg-light p-4 border">
+            <h2 class="lead">Add new Todo</h2>
+            <form>
+              <div class="my-3">
+                <label for="title" class="form-label">Title</label>
+                <input
+                  placeholder="Enter todo title..."
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  required
+                />
+              </div>
+              <div class="my-3">
+                <label class="form-label">Priority</label>
+                <div class="form-check">
+                  <input
+                    required
+                    class="form-check-input"
+                    type="radio"
+                    name="priority"
+                    id="priority-low"
+                  />
+                  <label class="form-check-label" for="priority-low">
+                    LOW
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    required
+                    class="form-check-input"
+                    type="radio"
+                    name="priority"
+                    id="priority-medium"
+                  />
+                  <label class="form-check-label" for="priority-medium">
+                    MEDIUM
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    required
+                    class="form-check-input"
+                    type="radio"
+                    name="priority"
+                    id="priority-high"
+                  />
+                  <label class="form-check-label" for="priority-high">
+                    HIGH
+                  </label>
+                </div>
+              </div>
+              <label class="form-check-label" for="showMore">
+                Show more fields&nbsp;
+              </label>
+              <input class="form-check-input" type="checkbox" id="showMore" />
+              <div class="more-fields">
+                <div class="my-3">
+                  <label for="dueDate" class="form-label">Due date</label>
+                  <input type="date" class="form-control" id="dueDate" />
+                </div>
+                <div class="my-3">
+                  <label for="details" class="form-label">Details</label>
+                  <textarea
+                    class="form-control"
+                    id="details"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-primary">Submit</button
+                ><button class="btn btn-secondary" type="reset">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light p-3 border-top mt-auto">
+      <div class="container">
+        <p class="lead m-0 text-center">Created with 🖥️ by Szymon</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
